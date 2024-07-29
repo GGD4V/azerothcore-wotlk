@@ -2064,7 +2064,7 @@ WaterBreath.Timer = 180000
 #                     0 - Disabled
 #
 
-EnableLowLevelRegenBoost = 1
+EnableLowLevelRegenBoost = 0
 
 #
 #    Rate.MoveSpeed
