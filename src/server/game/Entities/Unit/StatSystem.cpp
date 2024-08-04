@@ -910,11 +910,11 @@ void Player::UpdateExpertise(WeaponAttackType attack)
     }
 }
 
-void Player::ApplyManaRegenBonus(int32 amount, bool apply)
+/*void Player::ApplyManaRegenBonus(int32 amount, bool apply)
 {
     _ModifyUInt32(apply, m_baseManaRegen, amount);
     UpdateManaRegen();
-}
+}*/
 
 void Player::ApplyHealthRegenBonus(int32 amount, bool apply)
 {
