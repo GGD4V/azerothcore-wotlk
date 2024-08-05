@@ -2412,8 +2412,8 @@ int32 SpellInfo::CalcPowerCost(Unit const* caster, SpellSchoolMask schoolMask, S
                 powerCost += int32(CalculatePct(caster->GetCreateHealth(), ManaCostPercentage));
                 break;
             case POWER_MANA:
-                //powerCost += int32(CalculatePct(caster->GetCreateMana(), ManaCostPercentage));
-                //break;
+                powerCost += int32(CalculatePct(caster->GetCreateMana(), ManaCostPercentage));
+                break;
             case POWER_RAGE:
             case POWER_FOCUS:
             case POWER_ENERGY:
