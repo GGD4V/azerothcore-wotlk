@@ -2403,7 +2403,7 @@ int32 SpellInfo::CalcPowerCost(Unit const* caster, SpellSchoolMask schoolMask, S
     // Base powerCost
     int32 powerCost = ManaCost;
     // PCT cost from total amount
-    /*if (ManaCostPercentage)
+    if (ManaCostPercentage)
     {
         switch (PowerType)
         {
@@ -2428,7 +2428,7 @@ int32 SpellInfo::CalcPowerCost(Unit const* caster, SpellSchoolMask schoolMask, S
                 LOG_ERROR("spells", "CalculateManaCost: Unknown power type '{}' in spell {}", PowerType, Id);
                 return 0;
         }
-    }*/
+    }
     SpellSchools school = GetFirstSchoolInMask(schoolMask);
     // Flat mod from caster auras by spell school
     powerCost += caster->GetInt32Value(static_cast<uint16>(UNIT_FIELD_POWER_COST_MODIFIER) + school);
